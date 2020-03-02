@@ -6,6 +6,8 @@
 2.建议使用python3.7.x版本进行，否则本文件夹的train_nn.py可能不能正常运行。因截至目前 https://tensorflow.google.cn/install 中显示，目前tensorflow2.0仅支持到python3.7。另，在vscode的pylint下train_nn.py会报import错误，但实际上能够正常运行。   
 3.使用较新的库版本试运行了一次，增加了一组运行基本无问题的库版本。
 
+---
+
 教程链接在phmlearn.com->转子部件脱落故障预测->四、实验->转子部件脱落故障预测实验
 细节部分的内容参考转子部件脱落故障预测页面以及实验页面的详细说明
 
