@@ -27,7 +27,7 @@ def featureget(df_line):
     time_max = df_line.max()
     time_min = df_line.min()
     time_rms = np.sqrt(np.square(df_line).mean().astype(np.float64))
-    time_ptp = df_line.ptp()
+    time_ptp = np.asarray(df_line).ptp()
     time_median = np.median(df_line)
     time_iqr = np.percentile(df_line,75)-np.percentile(df_line,25)
     time_pr = np.percentile(df_line,90)-np.percentile(df_line,10)
