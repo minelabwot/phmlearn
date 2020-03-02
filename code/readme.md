@@ -1,18 +1,23 @@
 # 转子部件脱落故障预测实验
 
 
+2020/03/02   
+1.在featureget.py中修改了有关ptp的函数，因为针对Series对象的ptp方法在pandas1.0.0版本后被移除。新的实现将Series对象转为numpy支持的array对象，调用其ptp方法。详见 https://pandas.pydata.org/docs/whatsnew/v1.0.0.html 页面GH21614部分。      
+2.建议使用python3.7.x版本进行，否则本文件夹的train_nn.py可能不能正常运行。因截至目前 https://tensorflow.google.cn/install 中显示，目前tensorflow2.0仅支持到python3.7。另，在vscode的pylint下train_nn.py会报import错误，但实际上能够正常运行。   
+3.使用较新的库版本试运行了一次，增加了一组运行基本无问题的库版本。
+
 教程链接在phmlearn.com->转子部件脱落故障预测->四、实验->转子部件脱落故障预测实验
 细节部分的内容参考转子部件脱落故障预测页面以及实验页面的详细说明
 
 一、实验的准备以及数据观察
 
-1、python3.x 以及代码中导入的库或包，视频中采用的是conda环境下python3.7.5进行实验；
-pandas 0.25.2
-scipy 1.3.1
+1、python3.x 以及代码中导入的库或包，视频中采用的是conda环境下python3.7.5/3.7.6进行实验；
+pandas 0.25.2/1.0.1
+scipy 1.3.1/1.4.1
 joblib 0.14.1
-tensorflow 2.0.0
-matplotlib 3.1.1
-sklearn 0.21.3
+tensorflow 2.0.0/2.1.0
+matplotlib 3.1.1/3.1.3
+sklearn 0.21.3/0.22.1
 
 2、在特定位置建立好单独的工程文件夹，视频中在E:\中建立experiment文件夹，并在文件夹下预先建立：
    code datacleaned datacsv dataset featureset model 六个文件夹，代码中包括的路径名称参照这些文件夹建立。
