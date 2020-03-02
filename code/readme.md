@@ -14,12 +14,12 @@
 一、实验的准备以及数据观察
 
 1、python3.x 以及代码中导入的库或包，视频中采用的是conda环境下python3.7.5/3.7.6进行实验；
-pandas 0.25.2/1.0.1
-scipy 1.3.1/1.4.1
-joblib 0.14.1
-tensorflow 2.0.0/2.1.0
-matplotlib 3.1.1/3.1.3
-sklearn 0.21.3/0.22.1
+pandas 0.25.2/1.0.1   
+scipy 1.3.1/1.4.1   
+joblib 0.14.1   
+tensorflow 2.0.0/2.1.0   
+matplotlib 3.1.1/3.1.3   
+sklearn 0.21.3/0.22.1   
 
 2、在特定位置建立好单独的工程文件夹，视频中在E:\中建立experiment文件夹，并在文件夹下预先建立：
    code datacleaned datacsv dataset featureset model 六个文件夹，代码中包括的路径名称参照这些文件夹建立。
