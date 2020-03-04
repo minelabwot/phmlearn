@@ -2,8 +2,8 @@
 
 
 2020/03/02   
-1.在featureget.py中修改了有关ptp的函数，因为针对Series对象的ptp方法在pandas1.0.0版本后被移除。新的实现将Series对象转为numpy支持的array对象，调用其ptp方法。详见 https://pandas.pydata.org/docs/whatsnew/v1.0.0.html 页面GH21614部分。      
-2.建议使用python3.7.x版本进行，否则本文件夹的train_nn.py可能不能正常运行。因截至目前 https://tensorflow.google.cn/install 中显示，目前tensorflow2.0仅支持到python3.7。另，在vscode的pylint下train_nn.py会报import错误，但实际上能够正常运行。   
+1.在featureget.py中修改了有关ptp的函数，因为针对Series对象的ptp方法在pandas1.0.0版本后被移除。新的实现将Series对象转为numpy支持的array对象，调用其ptp方法。问题原因详见 https://pandas.pydata.org/docs/whatsnew/v1.0.0.html 页面GH21614部分。      
+2.建议使用python3.7.x版本进行，否则本文件夹的train_nn.py可能不能正常运行。因截至目前 https://tensorflow.google.cn/install 中显示，目前tensorflow2.0仅支持到python3.7。另，在pylint下train_nn.py会报import错误，但实际上能够正常运行。   
 3.使用较新的库版本试运行了一次，增加了一组运行基本无问题的库版本。
 
 ---
