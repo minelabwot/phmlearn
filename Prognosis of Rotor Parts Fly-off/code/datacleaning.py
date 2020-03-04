@@ -1,0 +1,27 @@
+import pandas as pd
+def datacleaning(input_file,threhold,output_file):
+    df = pd.read_csv(input_file)
+    print(df.shape)   
+    df = df[(df.iloc[:,1]>threhold) & (df.iloc[:,1+1026]>threhold) & (df.iloc[:,1+1026*2]>threhold) & (df.iloc[:,1+1026*3]>threhold) & (df.iloc[:,1+1026*4]>threhold) & (df.iloc[:,1+1026*5]>threhold)]
+    df = df.reset_index(drop=True)
+    print(df.shape)
+    df.to_csv(output_file,index=False)
+
+datacleaning("/datacsv/train01.csv",0,"/datacleaned/train01.csv")
+datacleaning("/datacsv/train02.csv",0,"/datacleaned/train02.csv")
+datacleaning("/datacsv/train03.csv",0,"/datacleaned/train03.csv")
+datacleaning("/datacsv/train04.csv",0,"/datacleaned/train04.csv")
+datacleaning("/datacsv/train05.csv",0,"/datacleaned/train05.csv")
+datacleaning("/datacsv/train06.csv",0,"/datacleaned/train06.csv")
+datacleaning("/datacsv/train07.csv",0,"/datacleaned/train07.csv")
+datacleaning("/datacsv/train08.csv",0,"/datacleaned/train08.csv")
+datacleaning("/datacsv/train09.csv",0,"/datacleaned/train09.csv")
+datacleaning("/datacsv/train10.csv",0,"/datacleaned/train10.csv")
+datacleaning("/datacsv/test11.csv",0,"/datacleaned/test11.csv")
+datacleaning("/datacsv/test12.csv",0,"/datacleaned/test12.csv")
+datacleaning("/datacsv/test13.csv",0,"/datacleaned/test13.csv")
+datacleaning("/datacsv/test14.csv",0,"/datacleaned/test14.csv")
+datacleaning("/datacsv/test15.csv",0,"/datacleaned/test15.csv")
+datacleaning("/datacsv/test16.csv",0,"/datacleaned/test16.csv")
+datacleaning("/datacsv/test17.csv",0,"/datacleaned/test17.csv")
+datacleaning("/datacsv/test18.csv",0,"/datacleaned/test18.csv")
