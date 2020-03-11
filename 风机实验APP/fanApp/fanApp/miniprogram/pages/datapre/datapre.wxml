@@ -1,0 +1,15 @@
+<!--pages/datapre/datapre.wxml-->
+<view class="titleContainer">
+  <text class="big-title">1.数据预处理</text>
+</view>
+<view class='input-container'>
+  <text class='algo-title'>设置IsolationForest算法的参数：</text>
+  <view class='line'></view>
+  <form bindsubmit='formsubmit'>
+    <view class='input-item'>
+      <view class='param-name'>contamination</view>
+      <input class='input' type='digit' value='0.1' name='inputValue1'></input>
+    </view>
+     <button class='btn' form-type='submit'>提交参数</button>
+  </form>
+</view>
