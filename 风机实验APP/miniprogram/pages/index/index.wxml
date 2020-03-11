@@ -1,6 +1,0 @@
-<!--index.wxml-->
-<view class="container">
-
-<image src="fanDemo.jpg" style="width:100%"></image>
-<button style="width:90%;border:1px solid #ccc" bindtap="navToPre">点击进入风机结冰预测实验</button>
-</view>
