@@ -2,9 +2,9 @@
 
 代码默认的文件存储说明：   
 data 原始数据   
-frame 下有 01_new 02_new 03_new三个文件夹，存储分帧结果输出文件
-feature 存储提取特征后的各种文件
-code 存储代码
+frame 下有 01_new 02_new 03_new三个文件夹，存储分帧结果输出文件   
+feature 存储提取特征后的各种文件   
+code 存储代码   
 
 ## 数据分帧 frame_divide.py
 以12800点为一帧，将sensor数据进行分片并保存。从data下读取文件，输出到frame文件夹中。
