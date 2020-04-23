@@ -1,0 +1,25 @@
+<view class='container1'>
+  <view class='box1'>
+    <view class="title">15h</view>
+    <view class="title">运行数量</view>
+  </view>
+  <view class='circleContainer'>
+    <view class="circle">
+      <view class="innerCircle">
+        <view style="font-size:30px;font-weight:bold">4</view>
+        <view>总数</view>
+      </view>
+    </view>
+    <view class="circle">
+      <view class="innerCircle">
+        <view style="font-size:30px;font-weight:bold">4</view>
+        <view>运行</view>
+      </view>
+    </view>
+  </view>
+
+</view>
+<view class="title2">设备总体运行状况</view>
+<view class="echartContainer">
+  <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+</view>

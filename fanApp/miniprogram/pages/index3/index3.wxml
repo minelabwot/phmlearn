@@ -1,0 +1,47 @@
+<view class="section">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前设备：
+      <text style="color:#237ab7;font-weight:bold;font-size:18px">{{array[index]}}</text>
+    </view>
+  </picker>
+</view>
+<view class="box1">
+  <view class='row'>当前状态：
+    <text style="color:green;font-weight:bold" data-i="i" wx:if='{{labels[i].predict ==0}}'>正常</text>
+    <text style="color:red;font-weight:bold" data-i="i" wx:elif='{{labels[i].predict ==1}}'>故障</text>
+  </view>
+</view>
+<view class="box1">
+  <view class='row'>诊断时间：
+    <text style="font-weight:bold">{{time}}</text>
+  </view>
+</view>
+<scroll-view scroll-x scroll-y style="width: 100%; height: 240px;margin-top:2px">
+  <view class='gkContentBox'>
+    <view class="gkTitle">工况参数</view>
+    <view class="gkTitle">有效值</view>
+    <view class="gkTitle">历史最高值</view>
+    <view class="gkTitle">历史最低值</view>
+  </view>
+  <view class='gkContentBox' wx:for='{{result}}' wx:for:item='item'>
+    <view class="gkContent" style="font-weight:bold">{{item.key}}</view>
+    <view class="gkContent" style="color:#237ab7" data-i="i">{{item.arr[i]}}</view>
+    <view class="gkContent">
+      <text style="color:orange">{{item.max}}</text> 
+    </view>
+    <view class="gkContent" style="color:red">{{item.min}}</view>
+  </view>
+</scroll-view>
+
+<view class="box2">
+  <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{array2}}">
+    <view class="picker">
+      当前工况：
+      <text style="color:#237ab7;font-weight:bold">{{array2[index2]}}</text>
+    </view>
+  </picker>
+</view>
+<view class="echartContainer">
+  <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+</view>

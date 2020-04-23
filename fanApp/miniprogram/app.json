@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/index3/index3",
+    "pages/index2/index2",
     "pages/index/index",
     "pages/datapre/datapre",
     "pages/feature/feature",
@@ -12,6 +14,28 @@
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "风机结冰预测实验",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/anli.png",
+        "selectedIconPath": "images/anli2.png"
+      },
+      {
+        "pagePath": "pages/index2/index2",
+        "text": "运行",
+        "iconPath": "images/fjicon.png",
+        "selectedIconPath": "images/fjicon2.png"
+      },
+      {
+        "pagePath": "pages/index3/index3",
+        "text": "工况",
+        "iconPath": "images/gk.png",
+        "selectedIconPath": "images/gk2.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2"
