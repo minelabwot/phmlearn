@@ -76,6 +76,9 @@ python SAE.py train='./home/train.cav' save=保存路径
 python DASL_model.py train='./home/train.cav' test='./home/test.cav'
 ```
 
+具体代码详解可参考：http://www.phmlearn.com/u/13212127650/blogs/15#wow14
+
+
 ## 实验结果
 
 
