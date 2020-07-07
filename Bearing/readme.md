@@ -62,11 +62,91 @@ tensorboard 1.14.0
 
 新建文件夹
 
-├─ 1.jpg
+Bearing-master
 
-├─ 2.jpg
+├─ .gitignore
 
-└─ ICPHM--receipt--binghao_fu.pdf
+├─ .git~
+
+├─ __init__.py
+
+├─ __init__.pyc
+
+├─ __pycache__
+
+│    ├─ __init__.cpython-37.pyc
+
+│    ├─ constants.cpython-37.pyc
+
+│    └─ plot_lstm_feature.cpython-37.pyc
+
+├─ amount_sensitive_model
+
+│    ├─ __init__.py
+
+│    ├─ __pycache__
+
+│    │    ├─ __init__.cpython-37.pyc
+│    │    ├─ amount_sensitive_model.cpython-37.pyc
+│    │    └─ handle_result.cpython-37.pyc
+│    ├─ amount_sensitive_model.py
+│    ├─ handle_result.py
+│    └─ nohup.out
+├─ cnn_lstm_model
+│    ├─ __init__.py
+│    ├─ __pycache__
+│    │    ├─ __init__.cpython-37.pyc
+│    │    ├─ cnn_lstm_model.cpython-37.pyc
+│    │    └─ handle_result.cpython-37.pyc
+│    ├─ cnn_lstm_model.py
+│    ├─ handle_result.py
+│    └─ nohup.out
+├─ constants.py
+├─ plot_lstm_feature.py
+├─ t-sne
+│    ├─ __init__.py
+│    └─ plot_lstm_feature.py
+├─ transfer_class_sensitive_model
+│    ├─ __init__.py
+│    ├─ __init__.pyc
+│    ├─ __main__.py
+│    ├─ __pycache__
+│    │    ├─ __init__.cpython-37.pyc
+│    │    ├─ __main__.cpython-37.pyc
+│    │    ├─ handle_result.cpython-37.pyc
+│    │    ├─ model.cpython-37.pyc
+│    │    └─ tools.cpython-37.pyc
+│    ├─ handle_result.py
+│    ├─ model.py
+│    ├─ nohup.out
+│    └─ tools.py
+├─ transfer_iter_model
+│    ├─ __init__.py
+│    ├─ __main__.py
+│    ├─ __pycache__
+│    │    ├─ __init__.cpython-37.pyc
+│    │    ├─ __main__.cpython-37.pyc
+│    │    ├─ data_generator.cpython-37.pyc
+│    │    ├─ handle_result.cpython-37.pyc
+│    │    ├─ model.cpython-37.pyc
+│    │    └─ tools.cpython-37.pyc
+│    ├─ data_generator.py
+│    ├─ dataset_loader.py
+│    ├─ handle_result.py
+│    ├─ model.py
+│    ├─ nohup.out
+│    └─ tools.py
+└─ transfer_model
+       ├─ __main__.py
+       ├─ __pycache__
+       │    └─ handle_result.cpython-37.pyc
+       ├─ handle_result copy.py
+       ├─ handle_result.py
+       ├─ model.py
+       ├─ nohup copy.out
+       ├─ nohup.out
+       ├─ tools.py
+       └─ transfer_model.py
 
 
 **调用**
