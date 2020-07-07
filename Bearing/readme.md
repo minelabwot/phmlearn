@@ -60,7 +60,7 @@ tensorboard 1.14.0
 
 **目录树**
 
-新建文件夹
+![image](https://github.com/minelabwot/phmlearn/blob/master/Bearing/image/Tree.png)
 
 
 **调用**
