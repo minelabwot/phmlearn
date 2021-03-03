@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/devicecondition/index",
     "pages/experience/index",
+    "pages/devicecondition/index",
     "pages/index2/index2",
     "pages/experience/datapre/datapre",
     "pages/experience/feature/feature",
