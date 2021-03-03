@@ -1,12 +1,12 @@
 {
   "pages": [
-    "pages/index3/index3",
+    "pages/devicecondition/index",
+    "pages/experience/index",
     "pages/index2/index2",
-    "pages/index/index",
-    "pages/datapre/datapre",
-    "pages/feature/feature",
-    "pages/GBDT/GBDT",
-    "pages/result/result"
+    "pages/experience/datapre/datapre",
+    "pages/experience/feature/feature",
+    "pages/experience/GBDT/GBDT",
+    "pages/experience/result/result"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -18,8 +18,8 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "text": "首页",
+        "pagePath": "pages/experience/index",
+        "text": "实验",
         "iconPath": "images/anli.png",
         "selectedIconPath": "images/anli2.png"
       },
@@ -30,7 +30,7 @@
         "selectedIconPath": "images/fjicon2.png"
       },
       {
-        "pagePath": "pages/index3/index3",
+        "pagePath": "pages/devicecondition/index",
         "text": "工况",
         "iconPath": "images/gk.png",
         "selectedIconPath": "images/gk2.png"

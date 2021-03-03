@@ -1,7 +1,7 @@
 //app.js
 App({
   onLaunch: function () {
-    
+
     if (!wx.cloud) {
       console.error('请使用 2.2.3 或以上的基础库以使用云能力')
     } else {
@@ -16,10 +16,11 @@ App({
     }
 
     this.globalData = {
-      input_fileName:"data_602541757299269579.csv",
-      access_token: "a26cf5ac6aa64c9da06b43cc46271fac.7a4b961c2e7dd6d1386462a71948d3d1",
-      output_fileName:'',
+      input_fileName: "data_602541757299269579.csv",
+      access_token: "a26cf5ac6aa64c9da06b43cc46271fac.e43a8ff6e92c298580c4e7e0a2d4d04f",
+      output_fileName: '',
       resultArray: []
     }
   }
+
 })

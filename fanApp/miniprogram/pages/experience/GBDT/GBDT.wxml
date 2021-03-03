@@ -1,0 +1,26 @@
+<view class="titleContainer">
+  <text class="big-title">3.选择机器学习算法</text>
+</view>
+<view class='input-container'>
+  <text class='algo-title'>设置GBDT算法的参数：</text>
+  <view class='line'></view>
+  <form bindsubmit='formsubmit'>
+    <view class='input-item'>
+      <view class='param-name'>模型训练的迭代次数</view>
+      <input class='input' type='digit' value='100' name='inputValue1'></input>
+    </view>
+    <view class='input-item'>
+      <view class='param-name'>学习率</view>
+      <input class='input' type='digit' value='1' name='inputValue2'></input>
+    </view>
+    <view class='input-item'>
+      <view class='param-name'>决策树的最大深度</view>
+      <input class='input' type='digit' value='3' name='inputValue3'></input>
+    </view>
+    <view class='input-item'>
+      <view class='param-name'>叶子节点最少样本数</view>
+      <input class='input' type='digit' value='1' name='inputValue4'></input>
+    </view>
+    <button class='btn' style="bottom:1%" form-type='submit'>提交参数</button>
+  </form>
+</view>

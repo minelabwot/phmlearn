@@ -40,7 +40,7 @@ function reqFunc(url,data,nextPage,callback){
       };
       setTimeout(function () {
         wx.navigateTo({
-          url: '/pages/' + nextPage + '/' + nextPage,
+          url: '/pages/experience/' + nextPage + '/' + nextPage,
         })
       }, 2000)
     },
@@ -50,8 +50,24 @@ function reqFunc(url,data,nextPage,callback){
     })
 }
 
+function getMaxValue(array){
+  return Math.max(...array).toFixed(5)
+}
+
+function getMinValue(array){
+  return Math.min(...array).toFixed(5)
+}
+
+function getDataArray(array) {
+  return array.map(item => {
+    return item.toFixed(5)
+  })
+}
 
 module.exports = {
   reqFunc: reqFunc,
-  formatTime: formatTime
+  formatTime: formatTime,
+  getMaxValue:getMaxValue,
+  getMinValue:getMinValue,
+  getDataArray:getDataArray
 }

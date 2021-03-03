@@ -1,0 +1,18 @@
+<view class="titleContainer">
+  <text class="big-title">2.特征提取</text>
+</view>
+<view class='input-container'>
+  <text class='algo-title'>设置时间窗的参数：</text>
+  <view class='line'></view>
+  <form bindsubmit='formsubmit'>
+    <view class='input-item'>
+      <view class='param-name'>window_length</view>
+      <input class='input' type='digit' value='15' name='inputValue1'></input>
+    </view>
+    <view class='input-item'>
+      <view class='param-name'>step_length</view>
+      <input class='input' type='digit' value='5' name='inputValue2'></input>
+    </view>
+     <button class='btn' form-type='submit'>提交参数</button>
+  </form>
+</view>
